@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ShopTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L15-Ay-sAD">
+                        <rect key="frame" x="8" y="8" width="72" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="SIU-E1-s9N"/>
+                            <constraint firstAttribute="width" constant="72" id="Tbp-yO-QLA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re2-Te-tAK">
+                        <rect key="frame" x="125" y="14" width="70" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Arg-r0-Nge"/>
+                            <constraint firstAttribute="height" constant="21" id="vjz-tZ-9IK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="L15-Ay-sAD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="4Gm-9f-poo"/>
+                    <constraint firstItem="Re2-Te-tAK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="aV2-MO-B8j"/>
+                    <constraint firstItem="Re2-Te-tAK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="pfL-lc-CKB"/>
+                    <constraint firstItem="L15-Ay-sAD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="qxc-ct-AyU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="shopNameLabel" destination="L15-Ay-sAD" id="6PP-xP-RLU"/>
+                <outlet property="shopPrice" destination="Re2-Te-tAK" id="0sc-LQ-Qe8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
